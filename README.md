@@ -26,13 +26,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+   .map is used to return a new array with modified data from the original array. For example, if you want to convert names in an array to lowercase, you would use .map.
+
+   .reduce returns a single value. You would use .reduce in a scenario where you want to find the total population of people that are represented in an array.
+
+   .filter returns a new array that includes only the data that is needed. If the data in the original array matches the conditions given, it is included in the new array, otherwise it is not included. For example, you would use .filter if you wanted to create a new array that only includes a people from the original array who live in a certain state.
+
 2. Explain the difference between a callback and a higher order function.
+
+   A callback function is passed to another function as an argument. A higher order funtion is the function that receives a callback function.
 
 3. Explain what a closure is.
 
+   A closure is when an inner function reaches outside of itself to grab a variable from an outer function.
+
 4. Describe the four principles of the 'this' keyword.
 
+   The four principles of the 'this' keyword are window binding, implicit binding, explicit binding, and new binding.
+
+   Window binding occurs when you do not give 'this' a specific context and it binds to the window.
+
+   Implicit binding occurs when you use object methods. 'This' is bound to the veriable that is to the left of the dot.
+
+   Explicit binding occurs when you use .call, .apply, or .bind to explicity tell a function what 'this' is referring to.
+
+   New binding occurs when a function is invoked with a new keyword. 'This' ends up binding to the new object that is created.
+
 5. Why do we need super() in an extended class?
+
+   We need super() in an extended class because it accesses the parent class' properties from within the extended class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
